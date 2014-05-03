@@ -130,10 +130,6 @@ AC_CHECK_FUNCS([uuid_create], [], [
 
 AM_CONDITIONAL(HAVE_LIBUUID, test x"$HAVE_LIBUUID" = x"yes")
 
-# check env
-AC_PATH_PROG(ENV, env)
-AC_SUBST(ENV)
-
 # --enable-boost
 AC_ARG_ENABLE(boost,
     AC_HELP_STRING([--enable-boost],
